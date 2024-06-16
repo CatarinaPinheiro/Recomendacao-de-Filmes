@@ -1,0 +1,82 @@
+{
+  "workspace": {
+    "id": null,
+    "name": "Untitled Workspace",
+    "theme": null,
+    "logo_url": null,
+    "brand_name": null,
+    "main_color": null,
+    "font_color": null,
+    "font_family": null
+  },
+  "visualization": [],
+  "kanban": {
+    "access_control": {
+      "is_public": false,
+      "required_roles": []
+    }
+  },
+  "home": {
+    "access_control": {
+      "is_public": true,
+      "required_roles": []
+    }
+  },
+  "jobs": [],
+  "hooks": [],
+  "forms": [
+    {
+      "id": "9cdefaaa-0cea-450c-a980-6d6fa181ec5a",
+      "path": "avaliacao-de-filmes",
+      "title": "Avalia\u00e7\u00e3o de Filmes",
+      "is_initial": true,
+      "auto_start": false,
+      "allow_restart": false,
+      "end_message": "Obrigado!",
+      "start_message": "Formul\u00e1rio para avalia\u00e7\u00e3o de filmes",
+      "error_message": null,
+      "welcome_title": null,
+      "timeout_message": null,
+      "start_button_text": null,
+      "restart_button_text": null,
+      "file": "avaliacao_de_filmes.py",
+      "workflow_position": [
+        -384.0,
+        -48.0
+      ],
+      "transitions": [
+        {
+          "target_id": "e71f7e74-be03-486b-9a89-c8601c04a163",
+          "target_type": "scripts",
+          "type": "forms:finished",
+          "id": "83nnt35",
+          "condition_value": null
+        }
+      ],
+      "notification_trigger": {
+        "variable_name": "assignee_emails",
+        "enabled": false
+      },
+      "access_control": {
+        "is_public": false,
+        "required_roles": []
+      }
+    }
+  ],
+  "scripts": [
+    {
+      "id": "e71f7e74-be03-486b-9a89-c8601c04a163",
+      "file": "sistema_de_recomendacao.py",
+      "title": "Sistema de recomenda\u00e7\u00e3o",
+      "is_initial": false,
+      "workflow_position": [
+        0.0,
+        -48.0
+      ],
+      "transitions": []
+    }
+  ],
+  "iterators": [],
+  "conditions": [],
+  "version": "9.0"
+}
