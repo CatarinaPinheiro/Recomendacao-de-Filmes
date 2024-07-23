@@ -1,1 +1,3 @@
-abstra==2.18.0
+abstra==2.20.1
+pandas
+scikit-learn

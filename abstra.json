@@ -7,13 +7,15 @@
     "brand_name": null,
     "main_color": null,
     "font_color": null,
-    "font_family": null
+    "font_family": null,
+    "language": "en"
   },
-  "visualization": [],
   "kanban": {
     "access_control": {
       "is_public": false,
-      "required_roles": []
+      "required_roles": [
+        "admin"
+      ]
     }
   },
   "home": {
@@ -22,7 +24,19 @@
       "required_roles": []
     }
   },
-  "jobs": [],
+  "jobs": [
+    {
+      "id": "4aa6b5c5-e908-4be0-b185-e48b1dcdc493",
+      "file": "sistema_de_recomendacao.py",
+      "title": "Sistema de recomenda\u00e7\u00e3o",
+      "schedule": "0 6 1 * *",
+      "workflow_position": [
+        -372.0,
+        48.0
+      ],
+      "transitions": []
+    }
+  ],
   "hooks": [],
   "forms": [
     {
@@ -44,39 +58,19 @@
         -384.0,
         -48.0
       ],
-      "transitions": [
-        {
-          "target_id": "e71f7e74-be03-486b-9a89-c8601c04a163",
-          "target_type": "scripts",
-          "type": "forms:finished",
-          "id": "83nnt35",
-          "condition_value": null
-        }
-      ],
+      "transitions": [],
       "notification_trigger": {
         "variable_name": "assignee_emails",
         "enabled": false
       },
       "access_control": {
-        "is_public": false,
+        "is_public": true,
         "required_roles": []
       }
     }
   ],
-  "scripts": [
-    {
-      "id": "e71f7e74-be03-486b-9a89-c8601c04a163",
-      "file": "sistema_de_recomendacao.py",
-      "title": "Sistema de recomenda\u00e7\u00e3o",
-      "is_initial": false,
-      "workflow_position": [
-        0.0,
-        -48.0
-      ],
-      "transitions": []
-    }
-  ],
+  "scripts": [],
   "iterators": [],
   "conditions": [],
-  "version": "9.0"
+  "version": "11.0"
 }
