@@ -13,17 +13,6 @@ def coletar_e_preparar_avaliacoes():
 
 
 def calcular_similaridade(matriz_usuario_filme):
-    similaridade_usuarios = cosine_similarity(matriz_usuario_filme)
-
-    # Convertendo para DataFrame
-    similaridade_usuarios_df = pd.DataFrame(
-        similaridade_usuarios, index=matriz_usuario_filme.index, columns=matriz_usuario_filme.index)
-
-    return similaridade_usuarios_df
-
-
-def calcular_similaridade(matriz_usuario_filme):
-    # Preenchimento de NaNs com 0 para simplificação
     matriz_usuario_filme = matriz_usuario_filme.fillna(0)
 
     # Calculando similaridades
